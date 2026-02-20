@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-20T10:26:24 IST" name="Suite" finished-at="2026-02-20T10:26:51 IST" duration-ms="27728">
+    <groups>
+    </groups>
+    <test started-at="2026-02-20T10:26:24 IST" name="Test" finished-at="2026-02-20T10:26:51 IST" duration-ms="27728">
+      <class name="com.learnpom.runner.TC001_Login">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.learnpom.runner.TC001_Login@393671df]" started-at="2026-02-20T10:26:24 IST" name="preCondition" finished-at="2026-02-20T10:26:28 IST" duration-ms="4706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="runLoginTest()[pri:0, instance:com.learnpom.runner.TC001_Login@393671df]" started-at="2026-02-20T10:26:28 IST" name="runLoginTest" finished-at="2026-02-20T10:26:29 IST" duration-ms="682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runLoginTest -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.learnpom.runner.TC001_Login@393671df]" started-at="2026-02-20T10:26:29 IST" name="postCondition" finished-at="2026-02-20T10:26:38 IST" duration-ms="8534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.learnpom.runner.TC001_Login -->
+      <class name="com.learnpom.runner.TC002_CreateLead">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.learnpom.runner.TC002_CreateLead@4fb0f2b9]" started-at="2026-02-20T10:26:38 IST" name="preCondition" finished-at="2026-02-20T10:26:42 IST" duration-ms="4052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="runCreateLeatTest()[pri:0, instance:com.learnpom.runner.TC002_CreateLead@4fb0f2b9]" started-at="2026-02-20T10:26:42 IST" name="runCreateLeatTest" finished-at="2026-02-20T10:26:45 IST" duration-ms="3610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCreateLeatTest -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.learnpom.runner.TC002_CreateLead@4fb0f2b9]" started-at="2026-02-20T10:26:45 IST" name="postCondition" finished-at="2026-02-20T10:26:51 IST" duration-ms="6074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.learnpom.runner.TC002_CreateLead -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
