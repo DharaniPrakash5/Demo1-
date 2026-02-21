@@ -2,33 +2,35 @@ package com.learnpom.base;
 
 import java.time.Duration;
 
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ProjectSpecificMethod {
 	//java.lang.NullPointerException:
 	
 	public static RemoteWebDriver driver;
 	@BeforeMethod
-	public void preCondition() {
+    public void preCondition() {
 
-	    EdgeOptions options = new EdgeOptions();
+        WebDriverManager.firefoxdriver().setup();
 
-	    options.addArguments("--headless");
-	    options.addArguments("--disable-gpu");
-	    options.addArguments("--disable-dev-shm-usage");
-	    options.addArguments("--window-size=1920,1080");
-	    options.addArguments("--remote-allow-origins=*");
-	    options.addArguments("--disable-extensions");
+        FirefoxOptions options = new FirefoxOptions();
 
-	    driver = new EdgeDriver(options);
+        options.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
 
-	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-	    driver.get("http://leaftaps.com/opentaps/control/main");
-	}
+        options.addArguments("--headless");
+
+        driver = new FirefoxDriver(options);
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.get("http://leaftaps.com/opentaps/control/main");
+    }
 	@AfterMethod
 	public void postCondition() {
 		driver.quit();
